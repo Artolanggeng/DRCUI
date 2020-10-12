@@ -1,0 +1,198 @@
+/*-===============================
+    SOCIAL AREA
+===============================-*/
+.social-area {
+  .social-icon-box {
+    margin-top: 30px;
+  }
+}
+/*-========== social-icons ==========-*/
+.social-icons {
+  .social-icon {
+    display: inline-block;
+    margin: 0 10px 10px 10px;
+    a {
+      color: $theme-color;
+      font-size: $display-15;
+      display: block;
+      @include transition(0.3s);
+      &:hover {
+        color: $theme-color-2;
+      }
+    }
+  }
+}
+/*-===============================
+    SOCIAL AREA 2
+===============================-*/
+.social-icons-2,
+.social-icons-3,
+.social-icons-4,
+.social-icons-5,
+.social-icons-6,
+.social-icons-7,
+.social-icons-11 {
+  .social-icon {
+    margin: 0 5px 15px 5px;
+    a {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border: 1px solid $theme-color;
+      @include border-radius(4px);
+      &:hover {
+        background-color: $theme-color;
+        color: $white;
+      }
+    }
+  }
+}
+/*-===============================
+    SOCIAL AREA 3
+===============================-*/
+.social-icons-3,
+.social-icons-5,
+.social-icons-7,
+.social-icons-11 {
+  .social-icon {
+    a {
+      @include border-radius(50%);
+    }
+  }
+}
+/*-===============================
+    SOCIAL AREA 4
+===============================-*/
+.social-icons-4,
+.social-icons-5{
+  .social-icon {
+    a {
+      background-color: rgba(46, 61, 98, 0.1);
+      border: none;
+    }
+  }
+}
+/*-===============================
+    SOCIAL AREA 6
+===============================-*/
+.social-icons-6,
+.social-icons-7 {
+  .social-icon {
+    a {
+      color: $white;
+      border: none;
+      &.facebook {
+        background-color: #3b5998;
+      }
+      &.twitter {
+        background-color: #55acee;
+      }
+      &.skype {
+        background-color: #00aff0;
+      }
+      &.google-plus {
+        background-color: #bd081c;
+      }
+      &.tumblr {
+        background-color: #35465c;
+      }
+      &.rss {
+        background-color: #f26522;
+      }
+      &.behance {
+        background-color: #0063dc;
+      }
+      &.youtube {
+        background-color: #cd201f;
+      }
+      &.vimeo {
+        background-color: #1ab7ea;
+      }
+      &.envira {
+        background-color: #5b9a68;
+      }
+      &.yahoo {
+        background-color: #410093;
+      }
+      &.spotify {
+        background-color: #2ebd59;
+      }
+      &:hover {
+        @include transform(translateY(-3px));
+      }
+    }
+  }
+}
+/*-===============================
+    SOCIAL AREA 8
+===============================-*/
+.social-icons-8,
+.social-icons-9,
+.social-icons-10 {
+  .social-icon {
+    a {
+      padding: 12px 20px;
+      background-color: $theme-color;
+      color: $white;
+      @include border-radius(4px);
+      font-size: $default-font;
+      i {
+        margin-right: 8px;
+      }
+      &:hover {
+        background-color: $theme-color-2;
+        color: $white;
+      }
+    }
+  }
+}
+/*-===============================
+    SOCIAL AREA 10
+===============================-*/
+.social-icons-9 {
+  .social-icon {
+    a {
+      color: $white;
+      &.facebook {
+        background-color: #3B5998;
+      }
+      &.twitter {
+        background-color: #55ACEE;
+      }
+      &.instagram {
+        background-color: #E1306C;
+      }
+      &.skype {
+        background-color: #00aff0;
+      }
+      &.google-plus {
+        background-color: #bd081c;
+      }
+    }
+  }
+}
+/*-===============================
+    SOCIAL AREA 12
+===============================-*/
+.social-icons-10,
+.social-icons-11{
+  .social-icon {
+    a {
+      color: $white;
+      background: #2e7ce4;
+      background: -moz-linear-gradient(-45deg,  #2e7ce4 0%, #7db9e8 100%);
+      background: -webkit-linear-gradient(-45deg,  #2e7ce4 0%,#7db9e8 100%);
+      background: linear-gradient(135deg,  #2e7ce4 0%,#7db9e8 100%);
+    }
+  }
+}
+/*-===============================
+    SOCIAL AREA 13
+===============================-*/
+.social-icons-11 {
+  .social-icon {
+    a {
+      border: none;
+    }
+  }
+}

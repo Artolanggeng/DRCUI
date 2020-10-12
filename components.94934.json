@@ -1,0 +1,186 @@
+{
+  "components": [
+    {
+      "name": "feature",
+      "display_name": null,
+      "created_at": "2020-10-10T03:32:52.809Z",
+      "updated_at": "2020-10-10T03:32:52.809Z",
+      "id": 1140200,
+      "schema": {
+        "name": {
+          "type": "text"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "feature",
+      "component_group_uuid": null
+    },
+    {
+      "name": "footer",
+      "display_name": null,
+      "created_at": "2020-10-10T17:12:33.077Z",
+      "updated_at": "2020-10-10T17:12:33.077Z",
+      "id": 1140503,
+      "schema": {},
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "footer",
+      "component_group_uuid": null
+    },
+    {
+      "name": "global",
+      "display_name": null,
+      "created_at": "2020-10-10T03:55:30.716Z",
+      "updated_at": "2020-10-10T17:12:55.947Z",
+      "id": 1140206,
+      "schema": {
+        "header": {
+          "type": "bloks",
+          "restrict_components": true,
+          "component_whitelist": [
+            "header"
+          ]
+        },
+        "footer": {
+          "type": "bloks",
+          "restrict_components": true,
+          "component_whitelist": [
+            "footer"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "global",
+      "component_group_uuid": null
+    },
+    {
+      "name": "grid",
+      "display_name": null,
+      "created_at": "2020-10-10T03:32:52.793Z",
+      "updated_at": "2020-10-10T03:32:52.793Z",
+      "id": 1140199,
+      "schema": {
+        "columns": {
+          "type": "bloks"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "grid",
+      "component_group_uuid": null
+    },
+    {
+      "name": "header",
+      "display_name": "",
+      "created_at": "2020-10-10T16:13:05.926Z",
+      "updated_at": "2020-10-10T17:10:45.657Z",
+      "id": 1140488,
+      "schema": {},
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": "",
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "header",
+      "component_group_uuid": null
+    },
+    {
+      "name": "home",
+      "display_name": null,
+      "created_at": "2020-10-10T03:43:46.535Z",
+      "updated_at": "2020-10-11T15:20:33.428Z",
+      "id": 1140201,
+      "schema": {
+        "header": {
+          "type": "bloks",
+          "restrict_components": true,
+          "component_whitelist": [
+            "header"
+          ]
+        },
+        "footer": {
+          "type": "bloks",
+          "restrict_components": true,
+          "component_whitelist": [
+            "footer"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "home",
+      "component_group_uuid": null
+    },
+    {
+      "name": "page",
+      "display_name": null,
+      "created_at": "2020-10-10T03:32:52.762Z",
+      "updated_at": "2020-10-10T03:32:52.762Z",
+      "id": 1140197,
+      "schema": {
+        "body": {
+          "type": "bloks"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "page",
+      "component_group_uuid": null
+    },
+    {
+      "name": "teaser",
+      "display_name": null,
+      "created_at": "2020-10-10T03:32:52.778Z",
+      "updated_at": "2020-10-10T03:32:52.778Z",
+      "id": 1140198,
+      "schema": {
+        "headline": {
+          "type": "text"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "teaser",
+      "component_group_uuid": null
+    }
+  ]
+}

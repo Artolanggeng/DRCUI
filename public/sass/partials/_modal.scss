@@ -1,0 +1,61 @@
+/*-===============================
+    MODAL AREA
+===============================-*/
+.modal-area {
+  .modal-wrap {
+    margin-top: 30px;
+    .theme-btn {
+      outline: none;
+    }
+    .modal {
+      .modal-header {
+        .close {
+          .la-close {
+            @include transition(0.3s);
+          }
+          &:hover {
+            .la-close {
+              @include transform(rotate(90deg));
+            }
+          }
+        }
+      }
+      .modal-body {
+        text-align: left;
+        line-height: 28px;
+        .form-group {
+          .col-form-label {
+            color: $theme-color;
+            font-weight: $font-weight-medium;
+            font-size: $default-font-2;
+          }
+          .form-control {
+            height: auto;
+            padding: 12px 20px;
+            font-size: $default-font-2;
+            color: $theme-color-4;
+            border-color: rgba(127, 136, 151, 0.3);
+            &:focus {
+              @include box-shadow(0 0 0 0);
+              border-color: rgba(127, 136, 151, 0.5);
+            }
+          }
+          .form-message {
+            height: 130px;
+          }
+        }
+      }
+      .modal-footer {
+        .btn {
+          border: none;
+        }
+        .btn-secondary {
+          background-color: $alter-color-6;
+        }
+        .btn-primary {
+          background-color: $alter-color-7;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+/*-===============================
+    SUBSCRIBER AREA
+===============================-*/
+.subscriber-area {
+  position: relative;
+  overflow: hidden;
+  .section-heading {
+    .section__title {
+      br {
+        @media #{$tab_device} {
+          display: none;
+        }
+        @media #{$large_mobile} {
+          display: none;
+        }
+        @media #{$small_mobile} {
+          display: none;
+        }
+      }
+    }
+  }
+  .subscriber-content {
+    background-color: $white;
+    @include border-radius(8px);
+    padding: 60px 40px;
+    @include box-shadow(0 0 40px rgba(82, 85, 90, 0.05));
+    border: 1px solid rgba(127, 136, 151, 0.1);
+    position: relative;
+    z-index: 1;
+    @include transition(0.3s);
+    &:hover {
+      @include transform(scale(0.98));
+    }
+  }
+  .subscriber-form-wrap {
+    position: relative;
+    z-index: 1;
+    width: 600px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    @media #{$tab_device} {
+      width: auto;
+    }
+    @media #{$large_mobile} {
+      width: auto;
+    }
+    @media #{$small_mobile} {
+      width: auto;
+    }
+    .subscriber-form {
+      position: relative;
+      width: 100%;
+      .form-control {
+        height: auto;
+        line-height: inherit;
+        padding: 20px 20px 20px 50px;
+        font-size: $default-font;
+        color: $theme-color;
+        border-color: rgba(127, 136, 151, 0.2);
+        font-weight: $font-weight-regular;
+        background-color: $white;
+        @include box-shadow(0 0 40px rgba(14,16,48,.06));
+        @include transition(0.3s);
+        @include border-radius(30px);
+        &:focus {
+          border-color:rgba(127, 136, 151, 0.4);
+        }
+      }
+      .la-envelope-o {
+        position: absolute;
+        top: 19px;
+        left: 20px;
+        font-size: $display-13;
+      }
+      .theme-btn {
+        position: absolute;
+        top: 50%;
+        @include transform(translateY(-50%));
+        right: 8px;
+        line-height: 50px;
+        @include border-radius(30px);
+        @media #{$small_mobile_one} {
+          position: inherit;
+          top: auto;
+          right: auto;
+          @include transform(translateY(0));
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    background-color: $theme-color-6;
+  }
+  &:before {
+    bottom: 50px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    @include border-radius(8px);
+  }
+  &:after {
+    top: 4px;
+    right: 220px;
+    width: 300px;
+    height: 300px;
+    @include border-radius(50%);
+  }
+}
+

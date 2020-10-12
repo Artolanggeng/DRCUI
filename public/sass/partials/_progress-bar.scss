@@ -1,0 +1,158 @@
+/*-===============================
+    PROGRESS BAR AREA
+===============================-*/
+.progress-bar-area {
+  .progress-bar-wrap {
+    margin-top: 30px;
+  }
+}
+.progress-bar-1 {
+  .bar {
+    margin-bottom: 30px;
+    .skill {
+      h4 {
+        font-size: $default-font;
+        text-transform: uppercase;
+        margin-bottom: 7px;
+        font-weight: $font-weight-semi-bold;
+      }
+    }
+    .bar-outer {
+      height: 18px;
+      background-color: $color;
+      position: relative;
+      @include border-radius(4px);
+      .speech-bubble {
+        font-size: $default-font-3;
+        line-height: 26px;
+        position: absolute;
+        top: -37px;
+        text-align: center;
+        min-width: 40px;
+        @include border-radius(4px);
+        display: none;
+        color: $white;
+        &:after {
+          border: 0.4em solid transparent;
+          content: "";
+          margin-left: -0.4em;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+        }
+      }
+      .bar-inner {
+        width: 0;
+        height: 18px;
+        @include border-radius(4px);
+      }
+      .html,
+      .photo {
+        left: calc(75% - 1.5em);
+      }
+      .jquery {
+        left: calc(55% - 1.5em);
+      }
+      .sketch,
+      .illustrator {
+        left: calc(90% - 1.5em);
+      }
+      .indesign {
+        left: calc(85% - 1.5em);
+      }
+
+      .ht,
+      .html {
+        background-color: $theme-color-2;
+      }
+      .html {
+        &:after {
+          border-top-color: $theme-color-2;
+        }
+      }
+      .jq,
+      .jquery {
+        background-color: $alter-color-2;
+      }
+      .jquery {
+       &:after {
+         border-top-color: $alter-color-2;
+       }
+      }
+      .sk,
+      .sketch {
+        background: $alter-color-3;
+      }
+      .sketch {
+       &:after {
+         border-top-color: $alter-color-3;
+       }
+      }
+      .ph,
+      .photo {
+        background: $alter-color-4;
+      }
+      .photo {
+        &:after {
+          border-top-color: $alter-color-4;
+        }
+      }
+      .il,
+      .illustrator {
+        background: $alter-color-5;
+      }
+      .illustrator {
+       &:after {
+         border-top-color: $alter-color-5;
+       }
+      }
+      .in,
+      .indesign {
+        background: $alter-color-7;
+      }
+      .indesign {
+        &:after {
+          border-top-color: $alter-color-7;
+        }
+      }
+    }
+  }
+}
+/*-===============================
+    PROGRESS BAR AREA 4
+===============================-*/
+.circle-bar-wrap {
+  .circlechart {
+    @media #{$tab_device} {
+      margin-bottom: 30px;
+    }
+    @media #{$large_mobile} {
+      margin-bottom: 30px;
+    }
+    @media #{$small_mobile} {
+      margin-bottom: 30px;
+    }
+    .circle-chart {
+      width: 200px;
+      height: 200px;
+    }
+    .success-stroke {
+      stroke:$theme-color-2;
+    }
+  }
+  .circlechart2 {
+    .success-stroke {
+      stroke:$theme-color-5;
+    }
+  }
+  .circlechart3 {
+    .success-stroke {
+      stroke:$alter-color-2;
+    }
+  }
+  .circlechart4 {
+    .success-stroke {
+      stroke:$alter-color-7;
+    }
+  }
+}

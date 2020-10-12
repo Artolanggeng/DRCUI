@@ -1,0 +1,46 @@
+/*-===============================
+    ALERT AREA
+===============================-*/
+.alert-area {
+  .alert-boxes {
+    margin-top: 30px;
+  }
+}
+/*-========== alert-box-item ============-*/
+.alert-box-item {
+  .alert {
+    padding: 20px 20px;
+    .alert-link {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .la {
+      font-size: $display-15;
+      margin-right: 8px;
+    }
+    .close {
+      padding: 20px 10px;
+      outline: none;
+    }
+  }
+}
+
+/*-=========== alert-box-item 2 ============-*/
+.alert-box-item-2 {
+  .alert-titles {
+    margin-bottom: 30px;
+    .alert__title {
+      margin-bottom: 5px;
+      font-weight: $font-weight-semi-bold;
+    }
+  }
+  .alert {
+    .alert-heading {
+      margin-bottom: 5px;
+    }
+    .alert-text {
+      line-height: 26px;
+    }
+  }
+}

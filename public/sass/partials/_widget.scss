@@ -1,0 +1,144 @@
+/*-===============================
+    WIDGET AREA
+===============================-*/
+.widgets-area {
+  background-color: $theme-color-6;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  //background-image: url("../images/bubble-shape.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  .circle-shape {
+    z-index: 1;
+    @include border-radius(8px);
+    top: 27%;
+    width: 25px;
+    height: 25px;
+  }
+  .circle-shape2 {
+    top: 10%;
+    width: 50px;
+    height: 50px;
+    @include transform(rotate(30deg));
+  }
+  .circle-shape3 {
+    top: auto;
+    bottom: 10%;
+  }
+  .circle-shape4 {
+    bottom: 20%;
+    top: auto;
+    left: 5%;
+    width: 80px;
+    height: 80px;
+    @include transform(rotate(30deg));
+  }
+  .circle-shape5 {
+    bottom: 50%;
+    top: auto;
+    left: auto;
+    right: 15%;
+    width: 70px;
+    height: 70px;
+    @include border-radius(12px);
+  }
+  .section-heading {
+    .section__title {
+      width: 880px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 56px;
+    }
+  }
+  .widget-content-wrap {
+    margin-top: 32px;
+    margin-bottom: 30px;
+    .widget-item {
+      background-color: $white;
+      @include border-radius(8px);
+      @include box-shadow(0 0 40px rgba(14, 16, 48, 0.04));
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+      @include transition(0.3s);
+      z-index: 1;
+      .widget-link {
+        display: block;
+        padding: 40px 20px 35px 20px;
+        .widget__icon {
+          width: 60px;
+          height: 60px;
+          line-height: 60px;
+          @include border-radius(50%);
+          background-color: rgba(143, 66, 236, 0.1);
+          color: $theme-color-2;
+          font-size: $display-8;
+          position: relative;
+          @include transition(0.3s);
+          &:after {
+            position: absolute;
+            content: '';
+            right: -7px;
+            top: 4px;
+            width: 30px;
+            height: 15px;
+            @include border-radius(50%);
+            background-color: $white;
+            @include transform(rotate(45deg));
+            @include transition(0.3s);
+          }
+        }
+        .widget__title {
+          margin-top: 20px;
+          font-size: $display-15;
+          text-transform: capitalize;
+          @include transition(0.3s);
+        }
+      }
+      &:before,
+      &:after {
+        position: absolute;
+        content: '';
+        width: 90px;
+        height: 120px;
+        @include border-radius(50%);
+        background-color: $white;
+        opacity: .1;
+        @include transition(0.3s ease);
+        z-index: -1;
+      }
+      &:before {
+        top: 0;
+        left: 0;
+        @include transform(translate(70%, -70%));
+      }
+      &:after {
+        bottom: 0;
+        right: 0;
+        @include transform(translate(-70%, 70%));
+      }
+      &:hover {
+        background-color: $theme-color-2;
+        .widget-link {
+          .widget__icon {
+            background-color: $white;
+            &:after {
+              background-color: $theme-color-2;
+            }
+          }
+          .widget__title {
+            color: $white;
+          }
+        }
+        &:before {
+          @include transform(translate(35%, -35%));
+        }
+        &:after {
+          @include transform(translate(-35%, 35%));
+        }
+      }
+    }
+  }
+}

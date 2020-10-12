@@ -1,0 +1,300 @@
+/*-===============================
+    ICON AREA
+===============================-*/
+.icon-area {
+  .icon-wrap {
+    margin-top: 30px;
+  }
+}
+
+/*-========== icon-item ==========-*/
+.icon-item {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  line-height: 73px;
+  background-color: rgba(46, 61, 98, 0.1);
+  color: $theme-color;
+  font-size: $display-9;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  margin-left: 30px;
+  position: relative;
+  z-index: 1;
+  @include transition(0.4s);
+  &:hover {
+    color: $white;
+    @include border-radius(50%);
+    background-color: $theme-color;
+  }
+}
+/*-===============================
+    icon-hover-style-2
+===============================-*/
+.icon-hover-style-2 {
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: $theme-color;
+    z-index: -1;
+    @include transition(0.4s);
+  }
+  &:hover {
+    @include border-radius(0);
+    background-color: inherit;
+    &:after {
+      bottom: auto;
+      top: 0;
+      height: 100%;
+    }
+  }
+}
+
+/*-===============================
+    icon-hover-style-3
+===============================-*/
+.icon-hover-style-3 {
+  @include border-radius(50%);
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $theme-color;
+    z-index: -1;
+    @include transition(0.4s);
+    @include border-radius(50%);
+    @include transform(scale(1.2));
+    opacity: 0;
+    visibility: hidden;
+  }
+  &:hover {
+    background-color: transparent;
+    color: $theme-color;
+    &:after {
+      @include transform(scale(1));
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+/*-===============================
+    icon-hover-style-4
+===============================-*/
+.icon-hover-style-4 {
+  @include border-radius(50%);
+  span {
+    @include transition(0.4s);
+  }
+  &:hover {
+    @include border-radius(0);
+    span {
+      @include transform(rotateZ(360deg));
+      color: $white;
+    }
+  }
+}
+
+/*-===============================
+    icon-hover-style-5
+===============================-*/
+.icon-hover-style-5 {
+  @include border-radius(12px);
+  background-color: $white;
+  @include box-shadow(0 0 30px rgba(0,0,0,0.1));
+  width: 80px;
+  height: 80px;
+  line-height: 83px;
+  overflow: hidden;
+  .fa {
+    @include transition(0.3s);
+  }
+  .fa-facebook {
+    color: #3b5998;
+  }
+  .fa-twitter {
+    color: #3cf;
+  }
+  .fa-instagram {
+    color: #dc4a38;
+  }
+  .fa-linkedin {
+    color: #00aff0;
+  }
+  .fa-dribbble {
+    color: #f26798;
+  }
+  .fa-pinterest {
+    color: #E60019;
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: -145px;
+    left: -145px;
+    width: 170px;
+    height: 170px;
+    @include transform(rotate(45deg));
+    background-color: #3b5998;
+    @include transition(0.5s);
+    z-index: -1;
+  }
+  &:hover {
+    background-color: transparent;
+    @include border-radius(12px);
+    .fa-facebook,
+    .fa-twitter,
+    .fa-instagram,
+    .fa-linkedin,
+    .fa-dribbble,
+    .fa-pinterest {
+      color: $white;
+    }
+    &:after {
+      bottom: -45px;
+      left: -45px;
+    }
+  }
+}
+
+/*-===============================
+    icon-hover-style-6
+===============================-*/
+.icon-hover-style-6 {
+  @include border-radius(50%);
+  background-color: $white;
+  @include box-shadow(0 0 30px rgba(0,0,0,0.1));
+  width: 80px;
+  height: 80px;
+  line-height: 83px;
+  @include transition(0);
+  &:hover {
+    animation: bounce 1s;
+    background-color: $theme-color-3;
+  }
+}
+/*-===============================
+    icon-hover-style-7
+===============================-*/
+.icon-hover-style-7 {
+  @include border-radius(0);
+  background-color: transparent;
+  color: $theme-color-2;
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include border-radius(50%);
+    background-color: rgba(108, 92, 231, 0.1);
+    z-index: -1;
+    @include transition(0.3s);
+  }
+  &:hover {
+    @include border-radius(0);
+    background-color: transparent;
+    &:after {
+      @include border-radius(0);
+      @include transform(rotate(45deg));
+      background-color: $theme-color-3;
+    }
+  }
+}
+/*-===============================
+    icon-hover-style-8
+===============================-*/
+.icon-hover-style-8 {
+  @include border-radius(0);
+  background-color: transparent;
+  color: $white;
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $theme-color;
+    -webkit-clip-path: polygon(20% 0%, 0 0, 0 50%, 0 100%, 20% 100%, 49% 100%, 80% 100%, 100% 100%, 100% 51%, 100% 0, 80% 0%, 49% 0);
+    clip-path: polygon(20% 0%, 0 0, 0 50%, 0 100%, 20% 100%, 49% 100%, 80% 100%, 100% 100%, 100% 51%, 100% 0, 80% 0%, 49% 0);
+    @include transition(0.3s);
+    z-index: -1;
+  }
+  &:hover {
+    @include border-radius(0);
+    background-color: transparent;
+    &:after {
+      -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+      clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    }
+  }
+}
+
+/*-===============================
+    icon-hover-style-9
+===============================-*/
+.icon-hover-style-9 {
+  @include border-radius(0);
+  background-color: transparent;
+  color: $white;
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $theme-color-2;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 70%, 100% 100%, 0 100%, 0% 70%, 0% 30%);
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 70%, 100% 100%, 0 100%, 0% 70%, 0% 30%);
+    @include transition(0.3s);
+    z-index: -1;
+  }
+  &:hover {
+    @include border-radius(0);
+    background-color: transparent;
+    &:after {
+      -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+      clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    }
+  }
+}
+
+/*-===============================
+    icon-hover-style-10
+===============================-*/
+.icon-hover-style-10{
+  @include border-radius(0);
+  background-color: transparent;
+  color: $white;
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $alter-color-3;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 46% 100%, 0 100%, 0 0, 49% 0);
+    clip-path: polygon(100% 0, 100% 100%, 46% 100%, 0 100%, 0 0, 49% 0);
+    @include transition(0.3s);
+    z-index: -1;
+  }
+  &:hover {
+    @include border-radius(0);
+    background-color: transparent;
+    &:after {
+      -webkit-clip-path: polygon(100% 34%, 100% 100%, 51% 80%, 0 100%, 0 35%, 49% 0);
+      clip-path: polygon(100% 34%, 100% 100%, 51% 80%, 0 100%, 0 35%, 49% 0);
+    }
+  }
+}

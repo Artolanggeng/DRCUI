@@ -1,0 +1,204 @@
+/*-===============================
+    COUNTDOWN
+===============================-*/
+.countdown {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: justify;
+  justify-content: center;
+  margin-top: 45px;
+  .countdown-item {
+    width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    @media #{$large_mobile} {
+      width: 50%;
+      margin-bottom: 50px;
+    }
+    @media #{$small_mobile} {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .countdown-time {
+      font-size: $display-5;
+      color: $theme-color;
+      font-weight: $font-weight-semi-bold;
+    }
+    .countdown-text {
+      font-size: $display-15;
+      margin-top: 10px;
+    }
+  }
+}
+/*-===============================
+    COUNTDOWN 2
+===============================-*/
+.countdown-2 {
+  .countdown-item {
+    .days,
+    .days-text {
+      color: $alter-color-5;
+    }
+    .hours,
+    .hours-text {
+      color: $alter-color-6;
+    }
+    .minutes,
+    .minutes-text {
+      color: $alter-color-7;
+    }
+    .seconds,
+    .seconds-text {
+      color: $alter-color-8;
+    }
+  }
+}
+
+/*-===============================
+    COUNTDOWN 3
+===============================-*/
+.countdown-3 {
+  .countdown-item {
+    .days,
+    .days-text {
+      background: #17a2b8;
+      background: -moz-linear-gradient(45deg,  #17a2b8 0%, #5c48e0 50%, #8f42ec 100%);
+      background: -webkit-linear-gradient(45deg,  #17a2b8 0%,#5c48e0 50%,#8f42ec 100%);
+      background: linear-gradient(45deg,  #17a2b8 0%,#5c48e0 50%,#8f42ec 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hours,
+    .hours-text {
+      background: #5c48e0;
+      background: -moz-linear-gradient(45deg,  #5c48e0 0%, #4be6b8 50%, #f78c01 100%);
+      background: -webkit-linear-gradient(45deg,  #5c48e0 0%,#4be6b8 50%,#f78c01 100%);
+      background: linear-gradient(45deg,  #5c48e0 0%,#4be6b8 50%,#f78c01 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .minutes,
+    .minutes-text {
+      background: #c500ee;
+      background: -moz-linear-gradient(45deg,  #c500ee 0%, #f67000 51%, #f55a17 100%);
+      background: -webkit-linear-gradient(45deg,  #c500ee 0%,#f67000 51%,#f55a17 100%);
+      background: linear-gradient(45deg,  #c500ee 0%,#f67000 51%,#f55a17 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .seconds,
+    .seconds-text {
+      background: #c500ee;
+      background: -moz-linear-gradient(45deg,  #c500ee 0%, #f8c652 50%, #f55974 100%);
+      background: -webkit-linear-gradient(45deg,  #c500ee 0%,#f8c652 50%,#f55974 100%);
+      background: linear-gradient(45deg,  #c500ee 0%,#f8c652 50%,#f55974 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+/*-===============================
+    COUNTDOWN 4
+===============================-*/
+.countdown-4 {
+  .countdown-item {
+    @include border-radius(50%);
+    border: 2px solid $theme-color;
+    width: 200px;
+    height: 200px;
+    padding-top: 85px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+/*-===============================
+    COUNTDOWN 5
+===============================-*/
+.countdown-5 {
+  .countdown-item {
+    @include border-radius(50%);
+    background-color: $white;
+    @include box-shadow(0 0 40px rgba(82, 85, 90, 0.05));
+    border: 1px solid rgba(127, 136, 151, 0.2);
+    width: 200px;
+    height: 200px;
+    padding-top: 85px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+  }
+}
+/*-===============================
+    COUNTDOWN 6
+===============================-*/
+.countdown-6 {
+  .countdown-item {
+    @include border-radius(50%);
+    background-image: linear-gradient( 89deg,  rgba(21,74,189,1) 0.1%, rgba(26,138,211,1) 51.5%, rgba(72,177,234,1) 100.2% );
+    width: 200px;
+    height: 200px;
+    padding-top: 85px;
+    margin: 0 15px 30px 15px;
+    .countdown-time,
+    .countdown-text {
+      color: $white;
+    }
+  }
+}
+
+/*-===============================
+    COUNTDOWN 7
+===============================-*/
+.countdown-7 {
+  background-color: $theme-color-6;
+  @include border-radius(4px);
+  height: 100%;
+  padding: 25px 30px;
+  -ms-flex-align: center;
+  align-items: center;
+  @media #{$laptop_m_four} {
+    text-align: center;
+    padding-top: 35px;
+  }
+  .countdown-heading {
+    margin-right: 25px;
+    @media #{$laptop_m_four} {
+      width: 100%;
+      margin-right: 0;
+    }
+    .countdown__title {
+      font-weight: $font-weight-semi-bold;
+      margin-bottom: 3px;
+    }
+  }
+  .countdown-item {
+    width: auto;
+    padding-top: 20px;
+    margin: 0 5px;
+    @media #{$laptop_m_four} {
+      padding-left: 0;
+      padding-right: 30px;
+      padding-top: 30px;
+    }
+    .countdown-time {
+      font-size: $display-7;
+    }
+    &:nth-child(5) {
+      padding-right: 0;
+    }
+  }
+  .countdown-btn {
+    margin-left: auto;
+    @media #{$laptop_m_four} {
+      width: 100%;
+     margin-top: 30px;
+    }
+    .theme-btn {
+      @include border-radius(4px);
+      padding: 0 20px;
+    }
+  }
+}

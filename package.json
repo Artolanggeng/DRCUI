@@ -1,0 +1,21 @@
+{
+  "name": "drcui-storyblok-integration",
+  "version": "1.0.0",
+  "description": "Web DRC UI",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Artolanggeng",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.1",
+    "express-handlebars": "5.1.0",
+    "gulp": "4.0.2",
+    "gulp-nodemon": "2.5.0",
+    "marked": "1.2.0",
+    "nodemon": "2.0.4",
+    "storyblok-node-client": "1.0.2"
+  }
+}

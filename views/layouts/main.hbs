@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="TechyDevs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Global List</title>
+
+    <!-- Favicon -->
+    <link rel="icon" sizes="16x16" href="/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.countdown.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/progresscircle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- end inject -->
+</head>
+
+<body>
+    {{{body}}}
+
+    <script type="text/javascript" src="//app.storyblok.com/f/storyblok-latest.js"></script>
+    <script type="text/javascript">
+        storyblok.init()
+
+        // On the change event refresh the window
+        storyblok.on('change', function () {
+            window.location.reload(true)
+        })
+
+        // Listen on the published event to clear the cache
+        storyblok.on('published', function () {
+            window.location.reload(true)
+        })
+    </script>
+
+</body>
+</html>

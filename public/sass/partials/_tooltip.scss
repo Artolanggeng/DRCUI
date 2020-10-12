@@ -1,0 +1,26 @@
+/*-===============================
+    TOOLTIP AREA
+===============================-*/
+.tooltip-area {
+  .tooltip-wrap {
+    margin-top: 30px;
+    .theme-btn {
+      @include border-radius(4px);
+      margin: 0 8px 10px 8px;
+      outline: none;
+    }
+  }
+}
+/*-===============================
+    POPOVER AREA
+===============================-*/
+.popover-area {
+  .tooltip-wrap {
+    .theme-btn {
+      background-color: $theme-color-4;
+      &:hover {
+        background-color: $theme-color;
+      }
+    }
+  }
+}

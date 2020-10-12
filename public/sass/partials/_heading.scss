@@ -1,0 +1,194 @@
+/*-===============================
+    HEADING AREA
+===============================-*/
+.heading-one {
+  .section__title {
+    font-size: $display-5;
+    font-weight: $font-weight-bold;
+  }
+}
+/*-===============================
+    HEADING AREA
+===============================-*/
+.heading-two,
+.heading-four{
+  .section__title {
+    font-weight: $font-weight-semi-bold;
+  }
+}
+/*-===============================
+    HEADING AREA
+===============================-*/
+.heading-three {
+  .section__title {
+    font-weight: $font-weight-bold;
+  }
+}
+/*-===============================
+    HEADING AREA 5
+===============================-*/
+.gradient-heading {
+  .section__title,
+  .section__meta {
+    font-weight: $font-weight-semi-bold;
+    background: #5c48e0;
+    background: -moz-linear-gradient(left,  #5c48e0 0%, #118589 47%, #16ada8 100%);
+    background: -webkit-linear-gradient(left,  #5c48e0 0%,#118589 47%,#16ada8 100%);
+    background: linear-gradient(to right,  #5c48e0 0%,#118589 47%,#16ada8 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  .section__meta {
+    font-weight: $font-weight-medium;
+  }
+  .section-divider {
+    &:before {
+      background: #5c48e0;
+      background: -moz-linear-gradient(left,  #5c48e0 0%, #118589 47%, #16ada8 100%);
+      background: -webkit-linear-gradient(left,  #5c48e0 0%,#118589 47%,#16ada8 100%);
+      background: linear-gradient(to right,  #5c48e0 0%,#118589 47%,#16ada8 100%);
+    }
+  }
+}
+
+/*-===============================
+    HEADING AREA 6
+===============================-*/
+.heading-five {
+  .section__title {
+    font-size: $primary-font;
+    font-weight: $font-weight-black;
+    line-height: 60px;
+  }
+}
+
+/*-===============================
+    HEADING AREA 7
+===============================-*/
+.heading-six {
+  .section__title {
+    font-size: $primary-font;
+    font-weight: $font-weight-regular;
+  }
+}
+/*-===============================
+    HEADING AREA 8
+===============================-*/
+.heading-seven {
+  .section__title {
+    font-size: $primary-font;
+    font-weight: $font-weight-light;
+  }
+}
+
+/*-===============================
+    HEADING AREA 9
+===============================-*/
+.heading-eight {
+  .section__title {
+    font-size: $primary-font;
+    font-weight: $font-weight-thin;
+  }
+}
+/*-===============================
+    HEADING AREA 10
+===============================-*/
+.heading-nine {
+  p {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: $default-font-3;
+  }
+}
+
+/*-===============================
+    HEADING AREA 11
+===============================-*/
+.heading-text-wrap {
+  margin-top: 28px;
+  .heading__text {
+    h3 {
+      margin-bottom: 14px;
+    }
+    p {
+      line-height: 28px;
+      margin-bottom: 25px;
+      &.lead {
+        line-height: 35px;
+      }
+    }
+    .theme-btn {
+      background-color: $white;
+      border: 1px solid $color;
+      color: $theme-color;
+      line-height: 45px;
+      font-size: $default-font-3;
+      &:hover {
+        background-color: $theme-color;
+        color: $white;
+        border-color: $theme-color;
+      }
+    }
+  }
+}
+.lead-text-wrap {
+  border-top: 1px solid $color;
+  border-bottom: 1px solid $color;
+  padding-top: 35px;
+}
+.blockquote-text-wrap {
+  padding-top: 35px;
+  .heading__text {
+    h3 {
+      border-bottom: 1px solid $color;
+      padding-bottom: 15px;
+      margin-bottom: 35px;
+    }
+  }
+  .blockquote {
+    position: relative;
+    border-left: 4px solid rgba(127, 136, 151, 0.4);
+    padding-left: 25px;
+    p {
+      line-height: 35px;
+      font-weight: $font-weight-medium;
+    }
+  }
+}
+.dropcaps-text-wrap {
+  .heading__text {
+    .dropcaps {
+      color: $theme-color-2;
+      float: left;
+      font-size: $display-5;
+      width: 70px;
+      height: 70px;
+      margin-top: 6px;
+      line-height: 73px;
+    }
+    .dropcaps2 {
+      border: 1px solid $theme-color-2;
+      @include border-radius(4px);
+      text-align: center;
+      margin-top: 7px;
+      margin-right: 20px;
+    }
+    .dropcaps3,
+    .dropcaps4 {
+      background-color: $theme-color-2;
+      @include border-radius(4px);
+      color: $white;
+      text-align: center;
+      margin-right: 20px;
+    }
+    .dropcaps4 {
+      @include border-radius(50%);
+    }
+  }
+}
+.inline-text-wrap,
+.color-text-wrap,
+.transform-text-wrap,
+.code-text-wrap {
+  padding-top: 35px;
+}

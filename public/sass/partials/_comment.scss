@@ -1,0 +1,174 @@
+.comments-wrapper {
+  margin-top: 50px;
+  .comments-title {
+    font-size: $display-8;
+    font-weight: $font-weight-semi-bold;
+    margin-bottom: 33px;
+  }
+  .leave-title {
+    margin-top: 60px;
+    margin-bottom: 7px;
+  }
+  .leave-desc {
+    font-size: $default-font;
+    color: $theme-color-4;
+    font-weight: $font-weight-medium;
+  }
+  .comments-list {
+    li {
+      .comment {
+        padding-bottom: 40px;
+        .avatar__img {
+          width: 100px;
+          height: 100px;
+          float: left;
+          @include border-radius(50%);
+          margin-right: 20px;
+          border: 8px solid $white;
+          @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+          @media #{$large_mobile} {
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+            display: inherit;
+          }
+          @media #{$small_mobile} {
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+            display: inherit;
+          }
+        }
+        .comment-body {
+          margin-left: 110px;
+          @media #{$large_mobile} {
+            margin-top: 25px;
+            margin-left: 0;
+            text-align: center;
+          }
+          @media #{$small_mobile} {
+            margin-left: 0;
+            margin-top: 25px;
+            text-align: center;
+          }
+          .meta-data {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            @media #{$large_mobile} {
+              display: block;
+              margin-bottom: 10px;
+            }
+            @media #{$small_mobile} {
+              display: block;
+              margin-bottom: 10px;
+            }
+            .comment__author {
+              font-size: $display-15;
+              color: $theme-color;
+              text-transform: capitalize;
+              font-weight: $font-weight-semi-bold;
+              margin-bottom: 12px;
+              display: inline-block;
+              @media #{$large_mobile} {
+                display: block;
+              }
+              @media #{$small_mobile} {
+                display: block;
+              }
+            }
+            .comment__date {
+              margin-left: auto;
+              font-weight: $font-weight-medium;
+            }
+          }
+          .review__stars {
+            margin-bottom: 10px;
+            li {
+              display: inline-block;
+              color: $theme-color-5;
+              font-size: $default-font-3;
+              margin-left: -2px;
+            }
+          }
+          .comment-content {
+            margin-bottom: 15px;
+            line-height: 28px;
+          }
+          .comment-reply {
+            margin-left: 10px;
+            @media #{$large_mobile} {
+              margin-left: 0;
+            }
+            @media #{$small_mobile} {
+              margin-left: 0;
+            }
+            .comment__btn {
+              color: $theme-color;
+              position: relative;
+              @include transition(0.3s);
+              display: inline-block;
+              padding: 4px 14px;
+              border: 1px solid $color;
+              @include border-radius(30px);
+              &:hover {
+                color: $white;
+                background-color: $theme-color-2;
+                border-color: $theme-color-2;
+              }
+            }
+            .helpful__btn {
+              float: right;
+              font-size: $default-font-3;
+              font-weight: $font-weight-medium;
+              @media #{$large_mobile} {
+                float: none;
+                margin-top: 25px;
+              }
+              @media #{$small_mobile} {
+                float: none;
+                margin-top: 25px;
+              }
+              button {
+                border: 1px solid rgba(128, 137, 150, 0.4);
+                @include border-radius(4px);
+                padding: 4px 12px;
+                color: $theme-color-4;
+                margin-left: 3px;
+                margin-right: 3px;
+                @include transition(0.3s);
+                display: inline-block;
+                line-height: 20px;
+                i {
+                  color: $theme-color;
+                }
+                &:hover {
+                  background-color: rgba(128, 137, 150, 0.1);
+                  color: $theme-color;
+                }
+              }
+            }
+          }
+        }
+      }
+      .comments-reply {
+        margin-left: 130px;
+        @media #{$laptop_m_four} {
+          margin-left: 25px;
+        }
+        @media #{$small_mobile} {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .contact-form-action {
+    margin-top: 36px;
+    padding-left: 0;
+    .form-group {
+      .message-control {
+        height: 170px;
+      }
+    }
+  }
+}

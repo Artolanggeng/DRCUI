@@ -1,0 +1,394 @@
+/*-===============================
+    ICON BOX AREA
+===============================-*/
+.icon-box-area {
+  .icon-box-wrap {
+    margin-top: 30px;
+  }
+}
+
+/*-========== ICON BOX =========-*/
+.icon-box {
+  @include border-radius(4px);
+  border: 1px solid rgba(127, 136, 151, 0.2);
+  padding: 30px;
+  position: relative;
+  margin-bottom: 30px;
+  @include transition(0.3s);
+  .icon-box-shape {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    @include border-radius(50%);
+    border: 2px solid rgba(127, 136, 151, 0.2);
+    &:nth-child(1) {
+      top: 25px;
+      left: 10%;
+    }
+    &:nth-child(2) {
+      bottom: 20px;
+      left: 50%;
+    }
+    &:nth-child(3) {
+      top: 35px;
+      right: 15%;
+    }
+  }
+  .box__icon {
+    font-size: $display-6;
+    color: $theme-color;
+    @include transition(0.3s);
+  }
+  .icon__title {
+    margin-top: 20px;
+    font-size: $display-13;
+    font-weight: $font-weight-semi-bold;
+    color: $theme-color-4;
+    text-transform: capitalize;
+    @include transition(0.3s);
+  }
+  &:hover {
+    border-color: $theme-color-2;
+    .box__icon,
+    .icon__title {
+      color: $theme-color-2;
+    }
+  }
+}
+
+/*-========== ICON BOX 2 =========-*/
+.icon-box-2 {
+  background-color: $white;
+  @include box-shadow(0 0 25px rgba(82, 85, 90, 0.1));
+  border: none;
+  @include border-radius(8px);
+  .icon-box-shape {
+    width: 1px;
+    height: 50px;
+    @include border-radius(0);
+    border: none;
+    background-color: rgba(46, 61, 98, 0.1);
+    @include transform(rotate(-30deg));
+  }
+  .box__icon {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    background-color: rgba(46, 61, 98, 0.1);
+    font-size: $display-8;
+    @include border-radius(50%);
+  }
+  &:hover {
+    .box__icon {
+      background-color: $theme-color;
+      color: $white;
+    }
+    .icon__title {
+      color: $theme-color;
+    }
+  }
+}
+
+/*-========== ICON BOX 3 =========-*/
+.icon-box-3 {
+  background-color: $theme-color;
+  @include box-shadow(0 0 25px rgba(82, 85, 90, 0.1));
+  border: none;
+  @include border-radius(8px);
+  .icon-box-outline {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    left: 50%;
+    @include transform(translateX(-50%));
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255,255,255,0.1);
+    -ms-text-stroke-color: rgba(255,255,255,0.1);
+    -o-text-stroke-color: rgba(255,255,255,0.1);
+    color: transparent;
+    text-transform: uppercase;
+    font-size: $display-6;
+  }
+  .box__icon {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: $display-8;
+    @include border-radius(12px);
+    color: $white;
+  }
+  .icon__title {
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 25px;
+  }
+  &:hover {
+    .box__icon {
+      background-color: $white;
+      color: $theme-color;
+    }
+    .icon__title {
+      color: $white;
+    }
+  }
+}
+/*-========== ICON BOX 4 =========-*/
+.icon-box-4 {
+  background-color: $white;
+  @include box-shadow(0 0 25px rgba(82, 85, 90, 0.1));
+  @include border-radius(8px);
+  border: none;
+  padding-top: 42px;
+  margin-bottom: 60px;
+  .box__icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    @include transform(translateX(-50%));
+    margin-top: -30px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    background-color: $white;
+    @include box-shadow(0 0 25px rgba(82, 85, 90, 0.1));
+    font-size: $display-8;
+    @include border-radius(50%);
+  }
+  .icon__title {
+    margin-bottom: 8px;
+    color: $theme-color;
+  }
+  .icon__text {
+    a {
+      color: $theme-color-4;
+    }
+  }
+  &:hover {
+    .box__icon {
+      background-color: $theme-color-2;
+      color: $white;
+    }
+    .icon__title {
+      color: $theme-color;
+    }
+  }
+}
+/*-========== ICON BOX 5 =========-*/
+.icon-box-5 {
+  background-color: $white;
+  @include box-shadow(0 0 25px rgba(82, 85, 90, 0.1));
+  @include border-radius(8px);
+  border: none;
+  .box-icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    line-height: 95px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $alter-color-7;
+    @include box-shadow(0 0 25px rgba(82, 85, 90, 0.1));
+    @include border-radius(50%);
+    @include transition(0.3s);
+    .box__count {
+      position: absolute;
+      bottom: 0;
+      right: -5px;
+      font-weight: $font-weight-semi-bold;
+      font-size: $default-font-2;
+      width: 30px;
+      height: 30px;
+      line-height: 33px;
+      background-color: $white;
+      @include box-shadow(0 0 25px rgba(82, 85, 90, 0.1));
+      @include border-radius(50%);
+      @include transition(0.3s);
+    }
+  }
+  .box__icon {
+    font-size: $display-8;
+    color: $white;
+  }
+  .icon__title {
+    color: $theme-color;
+    font-size: $display-14;
+  }
+  &:hover {
+    .box-icon {
+      .box__icon {
+        color: $white;
+      }
+      .box__count {
+        background-color: $alter-color-7;
+        color: $white;
+        @include box-shadow(0 0 25px rgba(82, 85, 90, 0.0));
+      }
+    }
+    .icon__title {
+      color: $theme-color;
+    }
+  }
+}
+/*-========== ICON BOX 6 =========-*/
+.icon-box-6 {
+  @include box-shadow(0 0 25px rgba(82, 85, 90, 0.0));
+  border-color: transparent;
+  .box__icon {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    background-color: $white;
+    @include box-shadow(0 0 25px rgba(82, 85, 90, 0.1));
+    font-size: $display-8;
+    @include border-radius(50%);
+  }
+  .icon__title {
+    font-size: $display-14;
+    font-weight: $font-weight-medium;
+  }
+  &:hover {
+    @include box-shadow(0 0 25px rgba(82, 85, 90, 0.1));
+  }
+}
+/*-========== ICON BOX 7 =========-*/
+.icon-box-7 {
+  background-color: $white;
+  @include box-shadow(0 0 25px rgba(82, 85, 90, 0.1));
+  border-color: transparent;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  .box__icon {
+    width: 50px;
+    height: 65px;
+    line-height: 65px;
+    background-color: $white;
+    text-align: center;
+    @include box-shadow(0 0 25px rgba(82, 85, 90, 0.1));
+    font-size: $display-10;
+    @include border-radius(30px);
+  }
+  .fa-facebook {
+    color: #3776FF;
+  }
+  .fa-twitter {
+    color: #46C9FF;
+  }
+  .fa-instagram {
+    color: #E0306C;
+  }
+  .fa-youtube-play {
+    color: #F54C04;
+  }
+  .icon__title {
+    margin-top: 0;
+    font-size: $display-14;
+    color: $theme-color;
+    margin-bottom: 5px;
+  }
+  .icon-box-content {
+    margin-left: 20px;
+  }
+}
+
+.icon-style-one {
+  &:hover {
+    border-color: #3776FF;
+    .fa-facebook {
+      color: #3776FF;
+    }
+    .icon__title {
+      color: #3776FF;
+    }
+  }
+}
+.icon-style-two {
+  &:hover {
+    border-color: #46C9FF;
+    .fa-twitter {
+      color: #46C9FF;
+    }
+    .icon__title {
+      color: #46C9FF;
+    }
+  }
+}
+.icon-style-three {
+  &:hover {
+    border-color: #E0306C;
+    .fa-instagram {
+      color: #E0306C;
+    }
+    .icon__title {
+      color: #E0306C;
+    }
+  }
+}
+.icon-style-four {
+  &:hover {
+    border-color: #F54C04;
+    .fa-youtube-play {
+      color: #F54C04;
+    }
+    .icon__title {
+      color: #F54C04;
+    }
+  }
+}
+
+/*-========== ICON BOX 8 =========-*/
+.icon-box-8 {
+  margin-bottom: 15px;
+  font-weight: $font-weight-medium;
+  background-color: $white;
+  @include border-radius(4px);
+  @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+  padding: 30px 20px;
+  position: relative;
+  border: none;
+  .box__icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    @include border-radius(50%);
+    background-color: rgba(108, 92, 231, 0.1);
+    font-size: $display-12;
+    margin-bottom: 15px;
+    @include transition(0.3s);
+  }
+  .icon-box-content {
+    .icon__title {
+      font-size: $default-font;
+      font-weight: $font-weight-medium;
+    }
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    top: 20px;
+    left: 0;
+    width: 4px;
+    height: 40px;
+    background-color: $theme-color-2;
+    @include border-radius(0 4px 4px 0);
+    opacity: 0.2;
+    @include transition(0.3s);
+  }
+  &:hover {
+    .box__icon {
+      background-color: $theme-color-2;
+      color: $white;
+    }
+    &:after {
+      opacity: 1;
+      top: 50%;
+      @include transform(translateY(-50%));
+    }
+  }
+}

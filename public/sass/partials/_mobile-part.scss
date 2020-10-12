@@ -1,0 +1,35 @@
+/*-===============================
+    MOBILE AREA
+===============================-*/
+.mobile-app-img {
+  @media #{$tab_device} {
+    margin-bottom: 60px;
+  }
+  @media #{$large_mobile} {
+    margin-bottom: 60px;
+  }
+  @media #{$small_mobile} {
+    margin-bottom: 60px;
+  }
+  img {
+    width: 100%;
+  }
+}
+.app-content {
+  margin-left: 30px;
+  @media #{$tab_device} {
+    margin-left: 0;
+  }
+  @media #{$large_mobile} {
+    margin-left: 0;
+  }
+  @media #{$small_mobile} {
+    margin-left: 0;
+  }
+}
+
+.app-btn-box {
+  @media #{$small_mobile_three} {
+    text-align: center;
+  }
+}

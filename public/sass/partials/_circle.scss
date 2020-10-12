@@ -1,0 +1,48 @@
+/*-===============================
+    CIRCLE-SHAPE
+===============================-*/
+.circle-shape {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  @include border-radius(50%);
+  background-color: $theme-color-2;
+  opacity: 0.1;
+  z-index: -1;
+  animation: circle-move 8s linear infinite;
+}
+.circle-shape2 {
+  left: auto;
+  top: 15%;
+  right: 10%;
+  background-color: $theme-color-3;
+}
+.circle-shape3 {
+  left: auto;
+  top: auto;
+  bottom: 5%;
+  right: 20%;
+  width: 30px;
+  height: 30px;
+  background-color: $theme-color-5;
+}
+.circle-shape4 {
+  top: auto;
+  left: 17%;
+  bottom: 12%;
+  width: 90px;
+  height: 90px;
+  background-color: $alter-color;
+}
+.circle-shape5 {
+  top: auto;
+  left: auto;
+  right: 10%;
+  bottom: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: $alter-color-2;
+}
+

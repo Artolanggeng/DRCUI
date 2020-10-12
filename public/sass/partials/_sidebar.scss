@@ -1,0 +1,344 @@
+/*-===============================
+   SIDEBAR
+===============================-*/
+.sidebar {
+  @include border-radius(4px);
+  border: 1px solid rgba(127, 136, 151, 0.2);
+  padding: 30px 30px 0 30px;
+  .sidebar-widget {
+    margin-bottom: 40px;
+    .widget__title {
+      font-size: $display-13;
+      font-weight: $font-weight-semi-bold;
+      color: $theme-color;
+      margin-bottom: 35px;
+      border-bottom: 1px solid rgba(127, 136, 151, 0.2);
+      padding-bottom: 15px;
+    }
+    .side__desc {
+      line-height: 28px;
+    }
+    .widget__list {
+      li {
+        margin-bottom: 10px;
+        position: relative;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          display: block;
+          color: $theme-color;
+          @include transition(0.3s);
+          background-color: rgba(46, 61, 98, 0.05);
+          padding: 10px 20px;
+          @include border-radius(4px);
+          .cat-count {
+            font-size: $default-font-3;
+            opacity: 0.8;
+          }
+        }
+        &:after {
+          position: absolute;
+          content: '';
+          top: 50%;
+          left: 0;
+          width: 3px;
+          height: 25px;
+          @include transform(translateY(-50%));
+          background-color: rgba(46, 61, 98, 0.1);
+          @include border-radius(0 4px 4px 0);
+          @include transition(0.3s);
+        }
+        &:hover {
+          &:after {
+            background-color: $white;
+          }
+          a {
+            color: $white;
+            background-color: $theme-color;
+            padding-left: 25px;
+          }
+        }
+      }
+    }
+    .tag__list {
+      li {
+        display: inline-block;
+        margin-bottom: 5px;
+        a {
+          padding-top: 7px;
+          padding-bottom: 7px;
+          font-size: $default-font-2;
+        }
+        &:hover {
+          a {
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+    .contact__links {
+      li {
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        i {
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          @include border-radius(50%);
+          color: $theme-color;
+          @include transition(0.3s);
+          background-color: rgba(46, 61, 98, 0.1);
+          margin-right: 5px;
+        }
+        a {
+          color: $theme-color-4;
+        }
+        &:hover {
+          i {
+            background-color: $theme-color-2;
+            color: $white;
+          }
+         a {
+           color: $theme-color-2;
+         }
+        }
+      }
+    }
+    .side__btns {
+      margin-top: 20px;
+      .theme-btn {
+        display: block;
+        @media #{$laptop_m_four} {
+          padding-left: 20px;
+          padding-right: 30px;
+        }
+        .la {
+          @media #{$laptop_m_four} {
+            right: 15px;
+          }
+        }
+      }
+      li {
+        &:first-child {
+          margin-bottom: 10px;
+          .theme-btn {
+            background-color: $alter-color-7;
+          }
+        }
+      }
+    }
+    .social__links {
+      li {
+        display:  inline-block;
+        a {
+          display: block;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          @include border-radius(50%);
+          color: $theme-color;
+          @include transition(0.3s);
+          background-color: rgba(46, 61, 98, 0.1);
+          &:hover {
+            color: $white;
+            background-color: $theme-color-2;
+          }
+        }
+      }
+    }
+  }
+  .contact-form-action {
+    form {
+      .form-group {
+        .form-control {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.recent-widget {
+  .nav-tabs {
+    border-bottom: none;
+    margin-bottom: 25px;
+    li {
+      margin-right: 4px;
+      @media #{$laptop_m_four} {
+        margin-bottom: 8px;
+        margin-right: 8px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      .nav-link {
+        color: $theme-color-4;
+        font-weight: $font-weight-medium;
+        @include border-radius(4px);
+        border: 1px solid rgba(127, 136, 151, 0.1);
+        position: relative;
+        @media #{$small_mobile_four} {
+          margin-bottom: 5px;
+        }
+        &:after {
+          position: absolute;
+          content: '';
+          bottom: 0;
+          width: 0;
+          height: 0;
+          left: 50%;
+          @include transform(translateX(-50%));
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-top: 6px solid $theme-color-2;
+          opacity: 0;
+          visibility: hidden;
+          @include transition(0.3s);
+        }
+        &.active {
+          background-color: $theme-color-2;
+          color: $white;
+          border-color: $theme-color-2;
+          &:after {
+            bottom: -6px;
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+  .recent-item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(127, 136, 151, 0.1);
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    @media #{$laptop_m_four} {
+      display: block;
+    }
+    @media #{$tab_device} {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+    }
+    @media #{$large_mobile} {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+    }
+    @media #{$small_mobile} {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+    }
+    &:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+    .recent-img {
+      img {
+        width: 85px;
+        height: 78px;
+        @include border-radius(4px);
+        @include box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+        margin-right: 15px;
+        @media #{$laptop_m_four} {
+          width: 100%;
+          height: auto;
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+        @media #{$tab_device} {
+           width: 85px;
+          height: 78px;
+          margin-right: 15px;
+          margin-bottom: 0;
+        }
+        @media #{$large_mobile} {
+           width: 85px;
+          height: 78px;
+          margin-right: 15px;
+          margin-bottom: 0;
+        }
+        @media #{$small_mobile} {
+           width: 85px;
+          height: 78px;
+          margin-right: 15px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .pro-img {
+      img {
+        @include box-shadow(0 0 0 0);
+      }
+    }
+    .recentpost-body {
+      .recent__meta {
+        font-size: $default-font-3;
+        color: $theme-color-4;
+        font-weight: $font-weight-medium;
+        a {
+          color: $theme-color-4;
+          @include transition(0.3s);
+          margin-left: 2px;
+          &:hover {
+            color: $theme-color-2;
+          }
+        }
+      }
+      .recent__link {
+        a {
+          color: $theme-color;
+          font-size: $default-font;
+          line-height: 22px;
+          display: block;
+          margin-top: 4px;
+          @include transition(0.3s);
+          &:hover {
+            color: $theme-color-2;
+          }
+        }
+      }
+      .pro__link {
+        a {
+          margin-top: 0;
+
+        }
+      }
+      .sell-rating-content {
+        .sell__rating {
+          li {
+            display: inline-block;
+            font-size: $default-font-4;
+            a {
+              color: $theme-color-2;
+            }
+          }
+        }
+      }
+      .prices {
+        span {
+          font-size: $default-font;
+          color: $theme-color-2;
+          font-weight: $font-weight-bold;
+          &.old__price {
+            color: $theme-color-4;
+            margin-right: 5px;
+            text-decoration: line-through;
+            font-size: $default-font;
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}

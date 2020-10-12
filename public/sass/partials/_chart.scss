@@ -1,0 +1,180 @@
+/*-===============================
+    CHART AREA
+===============================-*/
+.chart-box {
+  margin-top: 30px;
+  @include box-shadow(0 0 40px rgba(82, 85, 90, 0.07));
+  background-color: $white;
+  border: 1px solid rgba(127, 136, 151, 0.2);
+  @include border-radius(4px);
+  padding: 30px;
+  overflow: hidden;
+  .chart-title {
+    font-size: $display-12;
+    font-weight: $font-weight-semi-bold;
+    margin-bottom: 30px;
+  }
+}
+
+/*===== chart-legend ======*/
+.chart-legend {
+  padding-top: 25px;
+  ul {
+    li {
+      display: inline-block;
+      text-transform: capitalize;
+      position: relative;
+      color: $theme-color;
+      margin-left: 28px;
+      .legend__item {
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        background-color: $theme-color-2;
+        @include border-radius(50%);
+        position: absolute;
+        left: -22px;
+        top: 3px;
+      }
+      .legend__two {
+        background-color: $alter-color-2;
+      }
+    }
+  }
+}
+/*-===============================
+    CHART AREA 2
+===============================-*/
+.chart-legend-2 {
+  text-align: center;
+  ul {
+    li {
+      .legend__two {
+        background-color: $alter-color-6;
+      }
+      .legend__three {
+        background-color: $alter-color-7;
+      }
+      .legend__four {
+        background-color: #06b590;
+      }
+      .legend__five {
+        background-color: #35b53e;
+      }
+      .legend__six {
+        background-color: #377dff;
+      }
+      .legend__seven {
+        background-color: #ffaf00;
+      }
+    }
+  }
+}
+/*-===============================
+    CHART AREA 3
+===============================-*/
+.chart-legend-3 {
+  ul {
+    li {
+      .legend__one {
+        background-color: #06b590;
+      }
+      .legend__two {
+        background-color: $theme-color-2;
+      }
+    }
+  }
+}
+/*-===============================
+    CHART AREA 4
+===============================-*/
+.chart-legend-4 {
+  ul {
+    li {
+      .legend__one {
+        background-color: #6a82fb;
+      }
+      .legend__two {
+        background-color: #6ccdd9;
+      }
+    }
+  }
+}
+/*-===============================
+    CHART AREA 5
+===============================-*/
+.chart-legend-5 {
+  ul {
+    li {
+      .legend__one {
+        background-color: $alter-color;
+      }
+      .legend__two {
+        background-color: $alter-color-2;
+      }
+      .legend__three {
+        background-color: $alter-color-3;
+      }
+      .legend__four {
+        background-color: $alter-color-4;
+      }
+      .legend__five {
+        background-color: $alter-color-5;
+      }
+      .legend__six {
+        background-color: $alter-color-6;
+      }
+      .legend__seven {
+        background-color: $alter-color-7;
+      }
+      .legend__eight {
+        background-color: $theme-color-2;
+      }
+      .legend__nine {
+        background-color: $theme-color-4;
+      }
+    }
+  }
+}
+/*-===============================
+    CHART AREA 6
+===============================-*/
+.chart-legend-6 {
+  ul {
+    li {
+      .legend__one {
+        background-color: $alter-color;
+      }
+      .legend__two {
+        background-color: $alter-color-2;
+      }
+      .legend__three {
+        background-color: $alter-color-3;
+      }
+      .legend__four {
+        background-color: $alter-color-4;
+      }
+      .legend__five {
+        background-color: $alter-color-5;
+      }
+    }
+  }
+}
+
+/*-===============================
+    CHART
+===============================-*/
+#radar-chart,
+#polar-chart {
+  @media #{$small_mobile_one} {
+    width: 400px !important;
+    height: 200px !important;
+    margin-left: -30px;
+  }
+  @media #{$small_mobile_four} {
+    margin-left: -55px;
+  }
+  @media #{$small_mobile_three} {
+    margin-left: -80px;
+  }
+}

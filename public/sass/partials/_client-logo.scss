@@ -1,0 +1,52 @@
+/*====================================================
+   clientlogo-area
+ ====================================================*/
+.clientlogo-area {
+  padding-top: 100px;
+  padding-bottom: 90px;
+  position: relative;
+  .client-logo {
+    text-align: center;
+    .owl-item {
+      .client-logo-item {
+        display: inline-block;
+        @include transition(0.3s);
+        img {
+          opacity: 0.4;
+          @include transition(0.3s);
+        }
+        &:hover {
+          img {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+/*====================================================
+   clientlogo-area 2
+ ====================================================*/
+.clientlogo-area2 {
+  background-color: $theme-color-6;
+  padding-top: 80px;
+  padding-bottom: 75px;
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: -30px;
+    left: 50%;
+    @include transform(translateX(-50%));
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid $theme-color-6;
+  }
+}
+
+
+
+
+
+

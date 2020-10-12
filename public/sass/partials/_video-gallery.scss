@@ -1,0 +1,104 @@
+/*-===============================
+    VIDEO GALLERY AREA
+===============================-*/
+.video-gallery-area {
+  .video-gallery-wrap {
+    margin-top: 30px;
+  }
+}
+/*-======== video-gallery-item =========-*/
+.video-gallery-item {
+  @include border-radius(4px);
+  @include box-shadow(0 0 40px rgba(82, 85, 90, 0.2));
+  position: relative;
+  margin-bottom: 30px;
+  border: 8px solid $white;
+  img {
+    width: 100%;
+    @include border-radius(4px);
+  }
+  .video-play-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 61, 98, 0.7);
+    @include border-radius(4px);
+    @include transition(0.3s);
+    opacity: 0;
+    visibility: hidden;
+    color: $white;
+    font-size: $display-7;
+    .video__icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include transform(translate(-50%, -50%));
+      @include transition(0.3s);
+    }
+  }
+  &:hover {
+    .video-play-btn {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+/*-======== video-gallery-item-2 =========-*/
+.video-gallery-item-2 {
+  .video-play-btn {
+    opacity: 1;
+    visibility: visible;
+    width: 100px;
+    height: 70px;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+    border-width: 2px;
+    font-size: $display-10;
+    &:hover {
+      background-color: rgba(46, 61, 98, 0.9);
+    }
+  }
+}
+
+.video-gallery-carousel,
+.video-gallery-carousel2 {
+  .owl-nav {
+    div {
+      position: absolute;
+      top: 50%;
+      left: 30px;
+      @include transform(translateY(-50%));
+      color: $theme-color;
+      text-align: center;
+      font-size: $default-font;
+      width: 30px;
+      height: 30px;
+      line-height: 33px;
+      @include border-radius(50%);
+      background-color: $white;
+      @include transition(0.3s);
+      &:hover {
+        background-color: $theme-color-2;
+        color: $white;
+      }
+      &.owl-next {
+        left: auto;
+        right: 30px;
+      }
+    }
+  }
+}
+
+.video-gallery-item-4 {
+  background-color: transparent;
+  @include border-radius(0);
+  @include box-shadow(0 0 0 0);
+  border: none;
+  .gallery__title {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
